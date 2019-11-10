@@ -6,4 +6,7 @@ def create_phone_number(num_list):
         elif idx == 6:
             output += '-'
         output += str(num)
-    return num
+    return output
+
+def create_phone_number_improved(num_list):
+    return "({}{}{}) {}{}{}-{}{}{}".format(*num_list)
